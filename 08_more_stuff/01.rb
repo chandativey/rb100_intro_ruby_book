@@ -1,7 +1,7 @@
 # Write a program that checks if the sequence of characters "lab" exists in the following strings. If it does exist, print out the word. 
 
 def has_lab?(string)
-  if /lab/.match(string.downcase)
+  if /lab/i.match(string) # or we can use /lab/i
     puts "'lab' exists in '#{string}'"
   else
     puts "nope!"
